@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>捕鱼</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=640,target-densitydpi=320, minimum-scale=0.5, maximum-scale=2,user-scalable=0">
+  <link rel="stylesheet" href="css/list.css?v=2017.12.21">
+  <link rel="stylesheet" href="css/common.css?v=2017.12.21">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <script type="text/javascript" src="http://s0.web.hulai.com/static/jquery/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="js/swiper.min.js"></script>
+  <script type="text/javascript" src="http://page.hulai.com/static/open/js/vue-2.1.8.min.js"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/hulai-cms-0.0.1.js?v=2017.12.21"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/hulai-activity-0.0.1.js"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/isMobile.min.js"></script>
+</head>
+<body>
+<div id="app" v-cloak>
+  <div class="fanhui">
+    <span @click="goBack()"> < 返回</span>
+  </div>
+  <div class="content">
+    <!-- 列表 -->
+    <div class="infor">
+      <ul class="infor-ul">
+        <li :class="{inforact: zuixin}" @click="goGetList('最新',1,5,1)">最新</li>
+        <li :class="{inforact: xinwen}" @click="goGetList('新闻',1,5,1)">新闻</li>
+        <li :class="{inforact: gonggao}" @click="goGetList('公告',1,5,1)">公告</li>
+        <li :class="{inforact: gonglue}" @click="goGetList('攻略',1,5,1)">攻略</li>
+        <li :class="{inforact: huodong}" @click="goGetList('活动',1,5,1)">活动</li>
+      </ul>
+      <ul class="list">
+        <li v-for="item in listData">
+          <a :href="item.hrefVal">
+            <span class="w420">
+              <span>[</span>{{listName}}<span>]</span>
+              <span>{{item.title}}</span>
+            </span>
+            <span class="fr_dis">{{item.updated}}</span>
+          </a>
+        </li>
+      </ul>
+      <a href="javascript:;" class="more" @click="showMore()">查看更多</a>
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+      <img src="img/huaihudong.png">
+      <div class="ui inverted segment">
+        <div class="ui container c_center">
+          <p>
+            温馨提示：抵制不良游戏，拒绝盗版游戏，注意自我保护，谨防受骗上当，适度游戏益脑，沉迷游戏伤身，合理安排时间，享受健康生活
+            <br/> 本网站所有游戏仅适合于年满18周岁以上的用户。如果您未满18周岁，不建议您注册并使用本网络游戏服务；
+            <br/> 如果您坚持使用，请您务必加入本网络游戏防沉迷系统进行实名注册，同时我们将会按照您法定监护人的需求提供您在本网络游戏中的信息。
+            <br/> 您在使用本网络游戏服务之前已经明确知晓网络游戏可能给您带来的一切潜在威胁，包括长时间游戏可能不利于您的身心健康等。为了您的健康请您合理的使用本网络游戏。
+          </p>
+
+          <p>京ICP备11034336号-1 |
+            <a target="_blank" href="http://www.hulai.com/assets/files/huai_wenwangwen.jpg">
+              <font color="#fff">京网文[2011]0744-272号 |</font>
+            </a>
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502033250">
+              <font color="#fff"><img src="http://www.beian.gov.cn/img/ghs.png">京公网安备 11010502033250号 |</font>
+            </a>
+            <a target="_blank" href="http://www.hulai.com/assets/files/huai_xukezheng.pdf">
+              <font color="#fff">（总）网出证（京）字第095号 |</font>
+            </a>
+            <a href="#">
+              <font color="#fff">ICP证书号:京B2-20171148</font>
+            </a>
+          </p>
+          <p>
+            <a class="c_white" target="_blank" href="http://www.hulai.com/server" style="color:#fff">服务协议 |</a>
+            <a class="c_white" target="_blank" href="http://www.hulai.com/privacy" style="color:#fff">隐私权保护声明 |</a>
+            <a class="c_white" target="_blank" href="http://www.hulai.com/minors" style="color:#fff">未成年人家长监护 |</a>
+            <a class="c_white" target="_blank" href="http://www.hulai.com/law" style="color:#fff">法律声明 |</a>
+            <a class="c_white" target="_blank" href="http://www.hulai.com/dispute" style="color:#fff">纠纷、投诉</a>
+          </p>
+          <p>
+            北京市石景山区八大处高科技园区西井路3号3号楼9229房间 010-62662622
+          </p>
+          <p>
+            Copyright © 2015 Hoolai Games. All Rights Reserved | 互爱互动（北京）科技有限公司版权所有
+          </p>
+        </div>
+       </div>
+    </div>
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="js/index.js?v=2017.12.21"></script>
+</html>

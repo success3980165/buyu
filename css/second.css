@@ -1,0 +1,82 @@
+.second_bg{
+	float: left;
+	// margin-left: 66px;
+	margin-top: 30px;
+}
+.list_message{
+	text-align: left;
+	font-size: 24px;
+	height: 480px;
+  // width: 945px;
+	// border-bottom: 2px #e2d2b7 solid;
+}
+.list_message li{
+	border-bottom: 1px rgb(162, 162, 162) solid;
+  width: 1040px;
+  margin-bottom: 53px;
+  padding-bottom: 5px;
+  padding-left: 6px;
+  margin-left: 40px;
+}
+.list_message li span{
+	display: inline-block;
+	color: white;
+}
+.list_message li span a{
+	color: white;
+}
+.list_message li .left_classify{
+	padding-top: 2px;
+	width: 73px;
+  height: 33px;
+	font-size: 24px;
+	background-color: #17dbd7;
+	border-radius: 8px;
+	color: #fff;
+	text-align: center;
+}
+// .page{
+// 	margin-top: 30px;
+// }
+.page li{
+	display: inline-block;
+  width: 30px;
+  // height: 25px;
+  font-size: 22px;
+  text-align: center;
+  padding-top: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  color: white;
+}
+.active_page{
+	border-radius: 4px;
+	background-color: #8e5533;
+	color: #f9e4c3;
+}
+.pre_page,.next_page{
+	display: inline-block;
+	width: 38px;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 5px;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.classify_title ul li{
+	height: 32px;
+  font-size: 28px;
+  padding-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+// .active a{
+//     background-color: #2d61fb;
+//     color: #f9e4c3;
+//     border-radius: 4px;
+//     width: 20px;
+//     height: 20px;
+//     display: block;
+//     line-height: 20px;
+// }

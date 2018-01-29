@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>《新街机捕鱼》官方网站——万炮捕鱼，一触即发！</title>
+  <meta name="keywords" content="新街机捕鱼、捕鱼、捕鱼达人、捕鱼来了、波克捕鱼、波克、美人鱼、渔场、千炮捕鱼、海盗捕鱼、疯狂捕鱼、海贼捕鱼、赚金币、赚钱、千万金币、万炮捕鱼、华人捕鱼、电玩捕鱼、初级渔场、中级渔场、高级渔场、波克城市、海盗宝藏、新千炮捕鱼、10000炮捕鱼、捕鱼平台、正版捕鱼、休闲游戏、buyu、jieji、xinjiejibuyu、老虎机,捕鱼电玩城,单机游戏,街机捕鱼游戏,电玩城,经典捕鱼,欢乐捕鱼,超级电玩城,手游大全,游戏厅,现金夺宝捕鱼，赢钱,话费,钓鱼,万炮捕鱼,捕鱼大师,街机电玩城,捕鱼ol,3d捕鱼,单机捕鱼、金币、棋牌、街机,单机、捕鱼机、中发白、摩天轮">
+  <meta name="description" content="全新多模式捕鱼手机版——《新街机捕鱼》震撼来袭！还原街机捕鱼经典玩法，高级场、竞技场、世界BOSS、翅膀等多种休闲社交玩法，让您体验到前所未有的畅爽感！高清炫酷3D画质，Q萌鱼种，带来全新的感官体验">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/style.css?v=0.0.2">
+  <link rel="stylesheet" type="text/css" href="css/homepage.css?v=0.0.2">
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/swiper.min.js"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/isMobile.min.js"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/hulai-cms-0.0.1.js"></script>
+  <script type="text/javascript" src="js/moment.js"></script>
+  <script type="text/javascript">
+    if (isMobile.any) {
+      var goUrl = './m/index.html';
+      var url = window.location.href;
+      var urlArr = url.split('?')
+      if (urlArr.length>1) {
+        goUrl = goUrl + '?'+ urlArr[1];
+      }
+      location.replace(goUrl);
+    }
+  </script>
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?33d28da08dd2813859547fb8e6ea1550";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  <style>
+    body {
+      background: url("img/video/video_bg.jpg") no-repeat center top;
+      height: 2388px;
+    }
+    .swiper-container {
+      padding-top: 88px;
+      /*background-color: #034656;*/
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      /*background-color: #034656;*/
+      width: 440px !important;
+      height: 248px !important;
+      /*height: 165px;*/
+    }
+    .swiper-button-prev{
+      position: relative;
+      top: -540px;
+      left: 23px;
+      background: url(img/prev.png) no-repeat;
+      width: 67px;
+      height: 156px;
+    }
+    .swiper-button-next{
+      position: relative;
+      top: -398px;
+      right: -994px;
+      background: url(img/next.png) no-repeat;
+      width: 67px;
+      height: 156px;
+      z-index: 99;
+    }
+    [v-cloak] {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="app" v-cloak>
+    <div class="nav">
+      <ul class="nav_buyu">
+        <span class="nav_left">
+        <li class="nav_active">
+          <a href="index.html" class="news">官网首页</a>
+        </li>
+        <li @mouseenter="zixunUp()" @mouseleave="zixunClose()">
+          <a href="newsInformation.html#441">新闻资讯</a>
+          <ul class="nav_first" v-show="nav_zixun">
+            <li><a href="newsInformation.html#442">最新新闻</a></li>
+            <li><a href="newsInformation.html#440">官方公告</a></li>
+            <li><a href="newsInformation.html#446">游戏攻略</a></li>
+            <li><a href="newsInformation.html#443">精彩活动</a></li>
+          </ul>
+        </li>
+        </span>
+        <li class="home">
+          <a href="#" class="home"><img src="img/logo.png" alt=""></a>
+        </li>
+        <span class="nav_right">
+          <li @mouseenter="zixinUpOn()" @mouseleave="zixunCloseOff()" @click="dlbgUp()">
+          游戏下载
+          <ul class="nav_second" v-show="nav_xiazai">
+            <li><a href="">影音图画</a></li>
+          </ul>
+          <!-- <a href="newsInformation.html#443" class="down">游戏下载</a> -->
+        </li>
+        <li>
+          <a href="#" class="down" @click="expect()">联系我们</a>
+        </li>
+        </span>
+      </ul>
+    </div>
+    <!-- 邮箱装饰 -->
+    <div class="mail-deco">
+      <!-- 二维码图片 -->
+      <img style="margin-left: 23px;margin-top: 118px;" src="img/homepage/a.jpg?v=0.0.2">
+      <ul class="andQun">
+        <li>
+					<p>安卓QQ群 1群</p>
+					<p>646954601</p>
+				</li>
+				<li>
+					<p>安卓QQ群 2群</p>
+					<p>571889144</p>
+				</li>
+				<li>
+					<p>安卓QQ群 3群</p>
+					<p>511895038</p>
+				</li>
+				<!-- <li>
+					<p>安卓QQ群 4群</p>
+					<p>316743334</p>
+				</li> -->
+      </ul>
+      <img class="top" src="img/top.png" alt="" style="margin-top: 10px;margin-left: 34px;">
+    </div>
+    <!-- 下载按钮 -->
+    <div class="third_content">
+      <div class="sec_download">
+        <!-- <span id="video_play" @click="videoClick()"></span> -->
+        <!-- <img src="img/download.png" alt="" @click="dlbgUp()"> -->
+      </div>
+      <div class="shipin">
+        <p class="shipin_wenzi">官方视频</p>
+        <div class="shipin_video">
+          <img src="img/video/video.jpg" alt="" @click="videoClick()">
+          <!-- <img src="img/video/video2.jpg" alt="" style="padding-left: 60px;"> -->
+        </div>
+      </div>
+      <div class="jietu">
+        <p class="shipin_wenzi">视频截图</p>
+        <div class="swiper-container" style="width: 893px;height:463px;position: relative;">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/video/lunbo1.png?v=0.0.2" style="width: 438px;"></div>
+            <div class="swiper-slide"><img src="img/video/lunbo2.png?v=0.0.2" style="width: 438px;"></div>
+            <div class="swiper-slide"><img src="img/video/lunbo3.png?v=0.0.2" style="width: 438px;"></div>
+            <div class="swiper-slide"><img src="img/video/lunbo4.png?v=0.0.2" style="width: 438px;"></div>
+            <div class="swiper-slide"><img src="img/video/lunbo5.png?v=0.0.2" style="width: 438px;"></div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    <!-- 底部文字 -->
+    <div class="footer" style="margin-top: 75px;">
+      <p><img src="img/hudong.png" alt=""></p>
+      <p>
+        温馨提示：抵制不良游戏，拒绝盗版游戏，注意自我保护，谨防受骗上当，适度游戏益脑，沉迷游戏伤身，合理安排时间，享受健康生活
+        <br/> 本网站所有游戏仅适合于年满18周岁以上的用户。如果您未满18周岁，不建议您注册并使用本网络游戏服务；
+        <br/> 如果您坚持使用，请您务必加入本网络游戏防沉迷系统进行实名注册，同时我们将会按照您法定监护人的需求提供您在本网络游戏中的信息。
+        <br/> 您在使用本网络游戏服务之前已经明确知晓网络游戏可能给您带来的一切潜在威胁，包括长时间游戏可能不利于您的身心健康等。为了您的健康请您合理的使用本网络游戏。
+      </p>
+      <p>京ICP备11034336号-1 |
+        <a target="_blank" href="/assets/files/huai_wenwangwen.jpg">
+          <font>京网文[2011]0744-272号 |</font>
+        </a>
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502033250">
+          <font><img src="http://www.beian.gov.cn/img/ghs.png">京公网安备 11010502033250号 |</font>
+        </a>
+        <a target="_blank" href="/assets/files/huai_xukezheng.pdf">
+          <font>（总）网出证（京）字第095号 |</font>
+        </a>
+        <a href="#">
+          <font>ICP证书号:京B2-20171148</font>
+        </a>
+      </p>
+      <p>
+        <a class="c_white" target="_blank" href="http://www.hulai.com/server">服务协议 |</a>
+        <a class="c_white" target="_blank" href="http://www.hulai.com/privacy">隐私权保护声明 |</a>
+        <a class="c_white" target="_blank" href="http://www.hulai.com/minors">未成年人家长监护 |</a>
+        <a class="c_white" target="_blank" href="http://www.hulai.com/law">法律声明 |</a>
+        <a class="c_white" target="_blank" href="http://www.hulai.com/dispute">纠纷、投诉</a>
+      </p>
+      <p>
+        北京市石景山区八大处高科技园区西井路3号3号楼9229房间 010-62662622
+      </p>
+      <p>
+        Copyright © 2015 Hoolai Games. All Rights Reserved | 互爱互动（北京）科技有限公司版权所有
+      </p>
+    </div>
+    <!-- 遮罩层 -->
+    <div id="cover" v-show="cover" @click="dlbgOff()"></div>
+    <!-- 视频内容播放 -->
+    <div class="video_player" v-show="video_play">
+      <img src="img/homepage/close_video.png" class="video_close" @click="videoClose()">
+      <iframe frameborder="0" width="640" height="498" src="https://v.qq.com/iframe/player.html?vid=c053032vbxu&tiny=0&auto=0" allowfullscreen></iframe>
+      <!-- <video width="640" height="360" src="https://v.qq.com/x/page/c053032vbxu.html" controls="controls">
+        无法支持html5浏览器
+      </video> -->
+    </div>
+    <!-- 下载弹窗 -->
+    <div class="dl_bg" v-show="dl_bg">
+      <p class="cross"><img src="img/cross.png" alt="" @click="dlbgOff()"></p>
+      <div class="dl_content">
+        <div class="dl_left">
+          <img src="img/erweima.png" alt="">
+          <img src="img/dl_download.png" alt="">
+        </div>
+        <div class="dl_right">
+					<a href="https://itunes.apple.com/cn/app/id1239313319"><img src="img/app.png" alt=""></a>
+					<a href="http://huleshikongres-10034783.cossh.myqcloud.com/newjjfishing/res/xinjiejibuyu18.apk"><img src="img/android.png" alt="" style="padding-top: 28px;"></a>
+				</div>
+      </div>
+    </div>
+    <!-- 联系我们 -->
+    <div class="contact" v-show="contact_bg">
+      <p class="cross"><img src="img/cross.png" alt="" @click="dlbgOff()"></p>
+      <div class="contact_bg">
+        <div class="contact_top">QQ客服:800097470</div>
+        <div class="contact_bottom">客服微信:hoolai666</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="//page.hulai.com/static/open/js/vue-2.1.8.min.js"></script>
+  <script type="text/javascript" src="js/jointly.js?v=0.0.2"></script>
+  <script type="text/javascript" src="js/jq.js"></script>
+  <script type="text/javascript">
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 2,
+      paginationClickable: true,
+      spaceBetween: 0,
+      // autoplay: 2500,
+      autoplayDisableOnInteraction: false,
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      paginationClickable: true,
+      spaceBetween: 15,
+      loop: true
+    });
+  </script>
+</body>
+</html>

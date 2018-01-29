@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>《新街机捕鱼》官方网站——万炮捕鱼，一触即发！</title>
+	<meta name="keywords" content="新街机捕鱼、捕鱼、捕鱼达人、捕鱼来了、波克捕鱼、波克、美人鱼、渔场、千炮捕鱼、海盗捕鱼、疯狂捕鱼、海贼捕鱼、赚金币、赚钱、千万金币、万炮捕鱼、华人捕鱼、电玩捕鱼、初级渔场、中级渔场、高级渔场、波克城市、海盗宝藏、新千炮捕鱼、10000炮捕鱼、捕鱼平台、正版捕鱼、休闲游戏、buyu、jieji、xinjiejibuyu、老虎机,捕鱼电玩城,单机游戏,街机捕鱼游戏,电玩城,经典捕鱼,欢乐捕鱼,超级电玩城,手游大全,游戏厅,现金夺宝捕鱼，赢钱,话费,钓鱼,万炮捕鱼,捕鱼大师,街机电玩城,捕鱼ol,3d捕鱼,单机捕鱼、金币、棋牌、街机,单机、捕鱼机、中发白、摩天轮">
+	<meta name="description" content="全新多模式捕鱼手机版——《新街机捕鱼》震撼来袭！还原街机捕鱼经典玩法，高级场、竞技场、世界BOSS、翅膀等多种休闲社交玩法，让您体验到前所未有的畅爽感！高清炫酷3D画质，Q萌鱼种，带来全新的感官体验">
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=0.0.2">
+	<link rel="stylesheet" type="text/css" href="css/homepage.css?v=0.0.2">
+	<link rel="stylesheet" type="text/css" href="css/second.css?v=0.0.2">
+	<script type="text/javascript" src="js/select.js?v=0.0.2"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="http://s0.web.hulai.com/static/jquery/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="//page.hulai.com/static/open/js/hulai-cms-0.0.1.js"></script>
+	<script type="text/javascript" src="js/moment.js"></script>
+
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?33d28da08dd2813859547fb8e6ea1550";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	<style type="text/css">
+		body{
+			background: #000 url(../img/second/bg.jpg) no-repeat top center;
+			/*height: 1914px;*/
+			height: 1645px;
+		}
+		[v-cloak] {
+    	display: none;
+		}
+	</style>
+
+
+</head>
+<body>
+	<div id="app" v-cloak>
+		<div class="nav">
+			<ul class="nav_buyu">
+				<span class="nav_left">
+				<li class="nav_active">
+					<a href="index.html" class="news">官网首页</a>
+				</li>
+				<li @mouseenter="zixunUp()" @mouseleave="zixunClose()">
+					<a @click="goGetList('新闻', 1)" href="newsInformation.html#441">新闻资讯</a>
+					<ul class="nav_first" v-show="nav_zixun">
+						<li><a @click="goGetList('最新', 1)" href="newsInformation.html#442">最新新闻</a></li>
+						<li><a @click="goGetList('公告', 1)" href="newsInformation.html#440">官方公告</a></li>
+						<li><a @click="goGetList('攻略', 1)" href="newsInformation.html#446">游戏攻略</a></li>
+						<li><a @click="goGetList('活动', 1)" href="newsInformation.html#443">精彩活动</a></li>
+					</ul>
+				</li>
+				</span>
+				<li class="home">
+					<a href="#" class="home"><img src="img/logo.png" alt=""></a>
+				</li>
+				<span class="nav_right">
+					<li @mouseenter="zixinUpOn()" @mouseleave="zixunCloseOff()" @click="dlbgUp()">
+					游戏下载
+					<ul class="nav_second" v-show="nav_xiazai">
+						<li><a href="video.html">影音图画</a></li>
+					</ul>
+					<!-- <a href="newsInformation.html#443" class="down">游戏下载</a> -->
+				</li>
+				<li>
+					<a href="#" class="down" @click="expect()">联系我们</a>
+				</li>
+				</span>
+			</ul>
+		</div>
+
+		<!-- 视频播放 -->
+		<div class="sec_download second_dl">
+			<!-- <img src="img/download.png" alt="" @click="dlbgUp()"> -->
+		</div>
+
+		<!-- 邮箱装饰 -->
+		<div class="mail-deco">
+			<!-- 二维码图片 -->
+			<img style="margin-left: 23px;margin-top: 118px;" src="img/homepage/a.jpg?v=0.0.2">
+			<ul class="andQun">
+				<li>
+					<p>安卓QQ群 1群</p>
+					<p>646954601</p>
+				</li>
+				<li>
+					<p>安卓QQ群 2群</p>
+					<p>571889144</p>
+				</li>
+				<li>
+					<p>安卓QQ群 3群</p>
+					<p>511895038</p>
+				</li>
+				<!-- <li>
+					<p>安卓QQ群 4群</p>
+					<p>316743334</p>
+				</li> -->
+			</ul>
+			<img class="top" src="img/top.png" alt="" style="margin-top: 10px;margin-left: 34px;">
+		</div>
+
+		<div class="content content_list" style="height: 920px;">
+		<p style="font-size:22px;color:white;text-align: left;margin-left: 31px;">新街机捕鱼 <span>{{listName}}</span></p>
+			<!-- <div ></div> -->
+			<div class="w1000" style="width: 1062px;height: 695px;">
+				<div class="classify_title" style="margin-top:20px;margin-bottom:20px;">
+					<ul style="float:right;margin-top: 90px;margin-right: 130px;height: 45px;margin-bottom: 10px;width: 76%;">
+						<li @click="goGetList('最新',1,1)">最新</li>
+						<li @click="goGetList('新闻',1,1)">新闻</li>
+						<li @click="goGetList('公告',1,1)">公告</li>
+						<li @click="goGetList('活动',1,1)">活动</li>
+						<li @click="goGetList('攻略',1,1)">攻略</li>
+					</ul>
+				</div>
+				<div class="second_bg">
+					<ul class="list_message">
+						<li v-for="item in listData">
+							<span class="left_classify fl">{{listName}}</span>
+							<span style="margin-left:15px;width: 610px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">
+								<a :href="item.hrefVal">{{item.title}}</a>
+							</span>
+							<span class="fr" style="margin-right:10px">{{item.listDataTime}}</span>
+						</li>
+					</ul>
+
+					<ul class="page" v-show="more1">
+						<li v-if="cur>1"><a v-on:click="cur--,btnClick(cur)"><</a></li>
+						<li v-if="cur==1"><a class="banclick"><</a></li>
+						<li v-for="index in indexs"  v-bind:class="{ 'active': cur == index }">
+							<a v-on:click="btnClick(index)">{{ index }}</a>
+						</li>
+						<li v-if="cur!=all"><a v-on:click="cur++,btnClick(cur)">></a></li>
+						<li v-if="cur == all"><a class="banclick">></a></li>
+					</ul>
+			</div>
+		</div>
+		<div class="footer newfooter">
+			<p><img src="img/hudong.png" alt=""></p>
+      <p>
+        温馨提示：抵制不良游戏，拒绝盗版游戏，注意自我保护，谨防受骗上当，适度游戏益脑，沉迷游戏伤身，合理安排时间，享受健康生活
+        <br/> 本网站所有游戏仅适合于年满18周岁以上的用户。如果您未满18周岁，不建议您注册并使用本网络游戏服务；
+        <br/> 如果您坚持使用，请您务必加入本网络游戏防沉迷系统进行实名注册，同时我们将会按照您法定监护人的需求提供您在本网络游戏中的信息。
+        <br/> 您在使用本网络游戏服务之前已经明确知晓网络游戏可能给您带来的一切潜在威胁，包括长时间游戏可能不利于您的身心健康等。为了您的健康请您合理的使用本网络游戏。
+      </p>
+      <p>京ICP备11034336号-1 |
+        <a target="_blank" href="/assets/files/huai_wenwangwen.jpg">
+          <font>京网文[2011]0744-272号 |</font>
+        </a>
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502033250">
+          <font><img src="http://www.beian.gov.cn/img/ghs.png">京公网安备 11010502033250号 |</font>
+        </a>
+        <a target="_blank" href="/assets/files/huai_xukezheng.pdf">
+          <font>（总）网出证（京）字第095号 |</font>
+        </a>
+        <a href="#">
+          <font>ICP证书号:京B2-20171148</font>
+        </a>
+      </p>
+      <p>
+        <a class="c_white" target="_blank" href="http://www.hulai.com/server">服务协议 |</a>
+        <a class="c_white" target="_blank" href="http://www.hulai.com/privacy">隐私权保护声明 |</a>
+        <a class="c_white" target="_blank" href="http://www.hulai.com/minors">未成年人家长监护 |</a>
+        <a class="c_white" target="_blank" href="http://www.hulai.com/law">法律声明 |</a>
+        <a class="c_white" target="_blank" href="http://www.hulai.com/dispute">纠纷、投诉</a>
+      </p>
+      <p>
+        北京市石景山区八大处高科技园区西井路3号3号楼9229房间 010-62662622
+      </p>
+      <p>
+        Copyright © 2015 Hoolai Games. All Rights Reserved | 互爱互动（北京）科技有限公司版权所有
+      </p>
+    </div>
+	</div>
+
+	<!-- 遮罩层 -->
+	<div id="cover" v-show="cover" @click="dlbgOff()"></div>
+	<!-- 下载弹窗 -->
+	<div class="dl_bg" v-show="dl_bg">
+		<p class="cross"><img src="img/cross.png" alt="" @click="dlbgOff()"></p>
+		<div class="dl_content">
+			<div class="dl_left">
+				<img src="img/erweima.png" alt="">
+				<img src="img/dl_download.png" alt="">
+			</div>
+			<div class="dl_right">
+				<a href="https://itunes.apple.com/cn/app/id1239313319"><img src="img/app.png" alt=""></a>
+				<a href="http://huleshikongres-10034783.cossh.myqcloud.com/newjjfishing/res/xinjiejibuyu18.apk"><img src="img/android.png" alt="" style="padding-top: 28px;"></a>
+			</div>
+		</div>
+	</div>
+	<!-- 联系我们 -->
+	<div class="contact" v-show="contact_bg">
+		<p class="cross"><img src="img/cross.png" alt="" @click="dlbgOff()"></p>
+		<div class="contact_bg">
+			<div class="contact_top">QQ客服:800097470</div>
+			<div class="contact_bottom">客服微信:hoolai666</div>
+		</div>
+	</div>
+
+	<!-- 视频内容播放 -->
+	<!-- <div class="video_player" v-show="video_play">
+		<img src="img/homepage/close_video.png?v=0.0.2" class="video_close" @click="videoClose()">
+		<video width="640" height="360" src="http://huleshikongres-10034783.file.myqcloud.com/newjjfishing/res/video/37.mp4" controls="controls">
+			无法支持html5浏览器
+		</video>
+	</div> -->
+</div>
+
+
+
+<script src="//page.hulai.com/static/open/js/vue-2.1.8.min.js"></script>
+<script type="text/javascript" src="js/jointly.js?v=0.0.2"></script>
+<script type="text/javascript" src="js/jq.js"></script>
+<style>
+	.active a{
+	    background-color: #17dbd7;
+	    color: #f9e4c3;
+	    border-radius: 4px;
+	    width: 20px;
+	    height: 20px;
+	    display: block;
+	    line-height: 20px;
+	}
+	#cover {
+		display: block;
+	}
+	.video_player {
+		display: block;
+	}
+</style>
+</body>
+</html>

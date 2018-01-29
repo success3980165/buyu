@@ -1,0 +1,139 @@
+body{
+  width: 640px;
+  height: 2600px;
+  background-color: #000;
+}
+.bg{
+  width: 100%;
+  height: 100%;
+}
+.content{
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.bofang{
+  width: 95px;
+  position: absolute;
+  top: 125px;
+  left: 16px;
+}
+.download{
+  width: 205px;
+  margin-left: 236px;
+  position: absolute;
+  top: 870px;
+}
+.tese{
+  width: 100%;
+  position: absolute;
+  top: 1122px;
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+}
+.infor{
+  position: absolute;
+  top: 1640px;
+  height: 490px;
+  width: 100%;
+  border-top: solid 2px rgb(91,86,124);
+}
+.infor-ul{
+  overflow: hidden;
+  color: #fff;
+  font-size: 28px;
+  text-align: center;
+  width: 600px;
+  height: 48px;
+  margin-left: 20px;
+  padding-top: 25px;
+}
+.infor-ul li{
+  display: inline-block;
+  width: 112px;
+  /*border-right: solid 1px #fff;*/
+}
+.infor-ul li:nth-child(5){
+  border-right: none;
+}
+/*.infor-ul li:hover{
+  color: #653c20;
+}*/
+.list{
+  width: 590px;
+  height: 280px;
+  margin-top: 30px;
+  margin-left: 25px;
+}
+.list li{
+  font-size: 20px;
+  color: #fff;
+  padding: 15px 10px;
+  border-bottom: solid 2px rgb(91,86,124);
+}
+.fr_dis{
+  width: 115px;
+  float: right;
+  display: inline-block;
+}
+.w420{
+  width: 420px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.more{
+  display: inline-block;
+  text-align: center;
+  width: 155px;
+  margin-left: 242px;
+  border: solid 5px rgb(91,86,124);
+  border-radius: 30px;
+  height: 55px;
+  font-size: 23px;
+  line-height: 55px;
+  color: #fff;
+}
+.footer{
+  width: 600px;
+  margin-left: 20px;
+  position: absolute;
+  top: 2190px;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+}
+.video_player{
+  z-index: 100;
+  position: fixed;
+  height: 414px;
+  top: 50%;
+  margin-top: -212px;
+  display: none;
+}
+.video_close{
+  float: right;
+  z-index: 110;
+  width: 50px;
+  height: 50px;
+}
+.cover{
+  display: none;
+  z-index: 10;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+.swiper-container{
+  background: url('../img/lunbo_bg.png') no-repeat;
+  height: 365px;
+  background-size: 100%;
+}
